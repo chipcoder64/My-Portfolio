@@ -16,6 +16,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+    height: 65vw;
 }
 
 .left-side {
@@ -174,7 +175,7 @@ li a:link {
     .right-side{
         height: inherit;
         background-size: auto;
-        height: 110vw;
+        height: 160vw;
     }
     
     .left-side{
