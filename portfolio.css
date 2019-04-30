@@ -49,14 +49,14 @@
 }
 
 .heading {
-	background-image: linear-gradient(to right, #ac7cef, #954aff);
+	background-image: linear-gradient(to right, #3a4f8e, #001632);
 	color: #dce5f4;
 	text-align: center;
 	font-size: 5em;
 	padding: 40px 0 40px 0;
 	margin: 0;
-	text-shadow: 3px 3px 3px #8d10b0;
-	font-family: 'Major Mono Display', monospace;
+	text-shadow: 3px 3px 3px #4d6bff;
+	font-family: 'Audiowide', cursive;
 }
 
 .bio {
