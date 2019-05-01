@@ -74,12 +74,9 @@
 
 .mypicture {
 	position: relative;
-	display: block;
-	opacity: 1.0; 
+	display: inline;
 	width: 20%;
 	border-radius: 25px;
-	top: 10px;
-	left: 10px;
 
 }
 
