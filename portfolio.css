@@ -16,7 +16,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-    height: 65vw;
+    	height: 65vw;
 }
 
 .left-side {
@@ -34,9 +34,9 @@
 
 .blinking{
 	animation:blinkingText 0.9s infinite;
-    font-size: 6vw;
-    
+    	font-size: 6vw;
 }
+
 @keyframes blinkingText{
 	0%{		color: #dce5f4;	}
 	49%{	color: transparent;	}
@@ -76,11 +76,10 @@
 
 .mypicture {
 	position: relative;
-    display: inline;
+        display: inline;
 	width: 20%;
 	border-radius: 25px;
-    right: 13%;
-    
+        right: 13%;
 }
 
 .firstname {
@@ -116,8 +115,9 @@ li a:link {
 
 .position {
 	color: white;
-    margin: 10px;
+        margin: 10px;
 }
+
 .lowerdash {
 	color: red;
 }
@@ -170,13 +170,16 @@ li a:link {
         top: 25vw;
         left: 37%;
     }
+	
     .link-div{
         top: 3vw;
     }
+	
     .wrapper{
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
     }
+	
     .firstname{
         font-size: 3em;
     }
@@ -187,13 +190,16 @@ li a:link {
         left: 0;
         padding: 0;
     }
+	
     .heading{
         font-size: 2em;
         height: 50vw;
     }
+	
     .headline-section{
         clear: both;
     }
+	
     .right-side{
         height: inherit;
         background-size: auto;
