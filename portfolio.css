@@ -16,7 +16,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-    	height: 65vw;
+    height: 65vw;
 }
 
 .left-side {
@@ -34,9 +34,9 @@
 
 .blinking{
 	animation:blinkingText 0.9s infinite;
-    	font-size: 6vw;
+    font-size: 6vw;
+    
 }
-
 @keyframes blinkingText{
 	0%{		color: #dce5f4;	}
 	49%{	color: transparent;	}
@@ -76,10 +76,11 @@
 
 .mypicture {
 	position: relative;
-        display: inline;
+    display: inline;
 	width: 20%;
 	border-radius: 25px;
-        right: 13%;
+    right: 13%;
+    
 }
 
 .firstname {
@@ -115,22 +116,25 @@ li a:link {
 
 .position {
 	color: white;
-        margin: 10px;
+    margin: 10px;
 }
-
 .lowerdash {
 	color: red;
 }
-.link-div{
+.link-div{/*all the links in one flex div*/
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     position: relative;
     top: 6vh;
 }
 
-.link-image{/*when moving a link and image target the link only*/
+.link-image{/*when moving a link and image target the link only otherwise the image moves but the link stays*/
     flex-direction: row;
-    margin-right: 10px;
+    margin-right: 20px;
+}
+.icon-img{/*the images for the links*/
+    width: 35px;
+    height: 35px;
 }
 
 .headline-section{
@@ -144,7 +148,15 @@ li a:link {
     font-size: 1.5vw;
     display: inline-block;
     position: absolute;
-    top: 23vw;
+    top: 28vw;
+    left:45%;
+}
+
+.alias{
+    font-size: 1.5vw;
+    display: inline-block;
+    position: absolute;
+    top: 22vw;
     left:45%;
 }
 
@@ -167,19 +179,30 @@ li a:link {
 @media (max-width: 700px){
     .email{
         font-size: 3vw;
-        top: 30vw;
+        top: 33vw;
         left: 37%;
     }
-	
+    
+    .alias{
+        font-size: 3vw;
+        top: 27vw;
+        left: 37%;
+    }
+    
     .link-div{
         top: 3vw;
     }
-	
+    
+    .icon-img{
+        width: 25px;
+        height: 25px;
+    }
+    
     .wrapper{
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
     }
-	
+    
     .firstname{
         font-size: 3em;
     }
@@ -190,16 +213,16 @@ li a:link {
         left: 0;
         padding: 0;
     }
-	
+    
     .heading{
         font-size: 2em;
         height: 50vw;
     }
-	
+    
     .headline-section{
         clear: both;
     }
-	
+    
     .right-side{
         height: inherit;
         background-size: auto;
@@ -209,6 +232,7 @@ li a:link {
     .left-side{
         height: 210px;
     }
+    
     .mypicture{
         top: 5vw;
         right: 4%;
@@ -219,10 +243,12 @@ li a:link {
         margin: 10px 10% 0 10%;
         left: auto;
     }
+    
     .position{
         margin-left: 25px;
         font-size: 20px;
     }
+    
     .intro{
         font-size: 20px;
     }
