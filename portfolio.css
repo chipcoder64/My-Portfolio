@@ -137,6 +137,11 @@ li a:link {
     height: 35px;
 }
 
+.linkedin-img{
+    width: 40px;
+    height: 40px;
+}
+
 .headline-section{
     font-size: 3em;
     padding-left: 10%;
@@ -148,16 +153,21 @@ li a:link {
     font-size: 1.5vw;
     display: inline-block;
     position: absolute;
-    top: 28vw;
-    left:45%;
+    top: 31vw;
+    left:69%;
+}
+.email-img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
 }
 
 .alias{
-    font-size: 1.5vw;
+    font-size: 3vw;
     display: inline-block;
     position: absolute;
     top: 22vw;
-    left:45%;
+    left:40%;
 }
 
 .bio-link:link{
@@ -179,8 +189,13 @@ li a:link {
 @media (max-width: 700px){
     .email{
         font-size: 3vw;
-        top: 33vw;
-        left: 37%;
+        top: 32vw;
+        left: 36%;
+    }
+    
+    .email-img{
+        height: 30px;
+        width: 30px;
     }
     
     .alias{
@@ -196,6 +211,11 @@ li a:link {
     .icon-img{
         width: 25px;
         height: 25px;
+    }
+    
+    .linkedin-img{
+        width: 30px;
+        height: 30px;
     }
     
     .wrapper{
