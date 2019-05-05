@@ -19,6 +19,7 @@ body{
 	background-size: 150%;
 	position: relative;
     height: 55em;
+    top: -16px;
 }
 
 .layer {
@@ -141,10 +142,12 @@ li a:link {
 }
 
 .headline-section{
-    font-size: 3em;
+    font-size: 1.7em;
     padding-left: 10%;
     background-color: #4c4f54;
     color: #c4c7ce;
+    height: 55px;
+    padding-top: 5px;
 }
 
 .email{
@@ -174,15 +177,15 @@ li a:link {
 
 .chart{/*skills chart*/
     position: relative;
-    width: 70% !important;
+    width: 75% !important;
     height: 45% !important;
-    margin: 10px 10% 10px 10%;
+    margin: 10px 10% 10px 12%;
     border: 2px solid black;
     background-color: aliceblue;
     padding: 10px;
 }
 .projects{
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 15px 10%;
     color: white;
 }
@@ -197,13 +200,14 @@ p a{
 }
 @media (max-width: 924px){
     .right-side{
-        height: 72em;
+        height: 70em;
         background-size: 220%;
     }
 }
 @media (max-width: 818px){
     .right-side{
-        height: 80em;
+        height: 76em;
+        background-size: 260%;
     }
 }
 /* Media Queries below*/
@@ -266,8 +270,8 @@ p a{
     
     .right-side{
         height: inherit;
-        background-size: 400vw;
-        height: 90em;
+        background-size: 410vw;
+        height: 72em;
     }
     
     .left-side{
@@ -280,7 +284,7 @@ p a{
     }
     
     .bio{
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin: 10px 10% 0 10%;
         left: auto;
     }
@@ -297,18 +301,18 @@ p a{
 
 @media (max-width: 602px){
     .right-side{
-        height: 95em;
+        height: 73em;
         background-image: none;
     }
 }
 @media (max-width: 582px){
     .right-side{
-        height: 105em;
+        height: 90em;
     }
 }
 
 @media (max-width: 512px){
     .right-side{
-        height: 121em;
+        height: 98em;
     }
 }
