@@ -189,9 +189,59 @@ li a:link {
     margin: 15px 10%;
     color: white;
 }
+
+.skill-section{
+     font-size: 1.3em;
+    margin: 15px 10%;
+    color: white;
+}
+
+.work-experience{
+    font-size: 1.3em;
+    margin: 15px 10%;
+    color: white;
+}
+.career-objective{
+    font-size: 1.3em;
+    margin: 15px 10%;
+    color: white;
+}
+
+.h2resume{
+    color: white;
+    text-align: center;
+}
+
+.work-experience{
+    font-size: 1.3em;
+    margin: 15px 10%;
+    color: white;
+}
+
+.work-exp-li{
+    font-size: 1.3em;
+    margin: 15px 10%;
+    color: white;
+    list-style: none;
+}
+
+.work-section{
+    background-color: #70a3f4;
+    width: 90%;
+    margin: auto;
+}
+
+.work-section1{
+    background-color: #3462ad;
+    width: 90%;
+    margin: auto;
+}
+}
+
 p a{
     color: gray;
 }
+/*Media Queries below*/
 @media (max-width: 1129px){
     .right-side{
         height: 65em;
@@ -210,7 +260,7 @@ p a{
         background-size: 260%;
     }
 }
-/* Media Queries below*/
+
 @media (max-width: 700px){
     .email{
         font-size: 3vw;
