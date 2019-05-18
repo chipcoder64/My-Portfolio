@@ -146,13 +146,13 @@ li a:link {
     padding-left: 10%;
     background-color: #4c4f54;
     color: #c4c7ce;
-    height: 55px;
-    padding-top: 5px;
+    height: 40px;
+    
 }
 
 .email{
     font-size: 1.5vw;
-    display: inline-block;
+    display: flex;
     position: absolute;
     top: 31vw;
     left:69%;
@@ -194,6 +194,8 @@ li a:link {
      font-size: 1.3em;
     margin: 15px 10%;
     color: white;
+    list-style: none;
+    display: inline-block;
 }
 
 .work-experience{
@@ -247,6 +249,13 @@ p a{
         height: 65em;
         background-size: 200%;
     }
+    .heading{
+        height: 50vw;
+    }
+    .email{
+        font-size: 3vw;
+        left: 50%;
+    }
 }
 @media (max-width: 924px){
     .right-side{
@@ -258,6 +267,14 @@ p a{
     .right-side{
         height: 76em;
         background-size: 260%;
+    }
+    
+    .heading{
+        height: 50vw;
+    }
+    .email{
+      font-size: 4vw;
+      left: 36%;
     }
 }
 
@@ -366,3 +383,69 @@ p a{
         height: 98em;
     }
 }
+
+    @media (max-width: 376px){
+    .right-side{
+        height: 105em;
+        }
+        
+        .heading{
+            height: auto;
+        }
+        
+        .alias{
+            font-size: 4vw;
+            top: 30vw;
+        }
+        
+        .email{
+            font-size: 4.3vw;
+           top: 36vw; 
+            left: 70px;
+            align-items: center;
+        }
+        
+        .link-div{
+            top: 6vw;
+            left: 5px;
+        }
+         .mypicture{
+            top: -5vw;
+            right: 6%;
+        }
+}
+
+        @media (max-width: 365px){
+            .right-side{
+                height: 108em;
+            }
+    
+        .heading{
+            height: auto;
+            font-size: 1.3em;
+        }
+        .link-image{
+            margin-right: 15px;   
+        }
+        .link-div{
+            left: -15px;
+        }
+             .mypicture{
+            top: -5vw;
+            right: 9%;
+        }
+       
+}
+
+        @media (max-width: 321px){
+            .right-side{
+                height: 118em;
+            }
+}
+
+
+
+
+
+
+
