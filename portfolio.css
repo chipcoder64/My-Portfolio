@@ -22,7 +22,7 @@ body{
     top: -16px;
 }
 
-.layer {
+.layer {/*right side top layer*/
 	background-image: linear-gradient(to right, rgba(58, 79, 142, 0.8), rgba(0, 22, 50, 0.8));
 	position: absolute;
 	top: 0;
@@ -31,7 +31,7 @@ body{
 	height: 100%;
 }
 
-.blinking{
+.blinking{/* header blinking underscore*/
 	animation:blinkingText 0.9s infinite;
     font-size: 6vw;
     
@@ -42,7 +42,7 @@ body{
 	50%{	color: transparent;	}
 	99%{	color: transparent;	}
 	100%{	color: #dce5f4;	}
-    0% { text-shadow: 3px 3px 3px #8d10b0; }
+8ikj    0% { text-shadow: 3px 3px 3px #8d10b0; }
     49% { text-shadow: none; }
     50% { text-shadow: none; }
     99% { text-shadow: none; }
@@ -108,11 +108,6 @@ body{
 	margin: 5px;
 }
 
-li a:link {
-	color: #7d75b5;
-	text-decoration: none;
-}
-
 .position {
 	color: white;
     margin: 10px;
@@ -124,7 +119,9 @@ li a:link {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: 6vh;
+    top: 18vh;
+    height: 50px;
+    margin-bottom: 40px;
 }
 
 .link-image{/*when moving a link and image target the link only otherwise the image moves but the link stays*/
@@ -132,11 +129,15 @@ li a:link {
     margin-right: 20px;
 }
 .icon-img{/*the images for the links*/
+    position: relative;
+    top: -40px;
     width: 35px;
     height: 35px;
 }
 
 .linkedin-img{
+    position: relative;
+    top: -40px;
     width: 40px;
     height: 40px;
 }
@@ -238,12 +239,33 @@ li a:link {
     width: 90%;
     margin: auto;
 }
+
+.projects * a{
+    color: gray;
+    text-decoration: none;
+}
+.projects * a:hover{
+    color: #c4c7ce;
 }
 
-p a{
-    color: gray;
+.certifications{
+    margin: 10px 40px 10px 40px;
+    width: 80%;
+    height: 100%;
 }
+
 /*Media Queries below*/
+
+@media (max-width: 1370px){
+    .link-div{
+        top: 70px;
+    }
+    .email{
+        font-size: 2.5vw;
+        left: 63%;
+    }
+}
+
 @media (max-width: 1129px){
     .right-side{
         height: 65em;
@@ -275,6 +297,10 @@ p a{
     .email{
       font-size: 4vw;
       left: 36%;
+    }
+
+    .link-div{
+        top: 100px;
     }
 }
 
@@ -382,7 +408,12 @@ p a{
     .right-side{
         height: 98em;
     }
+
+    .link-div{
+        top: 50px;
+    }
 }
+
 
     @media (max-width: 376px){
     .right-side{
@@ -406,7 +437,7 @@ p a{
         }
         
         .link-div{
-            top: 6vw;
+            top: 100px;
             left: 5px;
         }
          .mypicture{
@@ -429,6 +460,7 @@ p a{
         }
         .link-div{
             left: -15px;
+            top: 100px;
         }
              .mypicture{
             top: -5vw;
@@ -441,7 +473,10 @@ p a{
             .right-side{
                 height: 118em;
             }
-}
+            .link-div{
+                top: 100px;
+        }
+    }
 
 
 
