@@ -54,9 +54,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#contact-me">Contact_</a>
       </li>
-      <li class="nav-item">
+     <!-- <li class="nav-item">
         <a class="nav-link" href="certifications.html">Certifications_</a>
-      </li>
+      </li>-->
   </ul>
      
   </div>
@@ -64,7 +64,42 @@
 <div><p class="headline-section">&lt; Skills &gt;</p>
     </div>
 <canvas class="chart" id="myChart"></canvas>
-<p class="projects">I'm well rounded and feel comfortable with HTML5, Css, Flexbox, Css-Grid, and Boostrap. I'm in the process of learning Javascript and have a few projects in Codepen. I just started learning React.js</p>
+<!--<p class="projects">I'm well rounded and feel comfortable with HTML5, Css, Flexbox, Css-Grid, and Boostrap. I'm in the process of learning Javascript and have a few projects in Codepen. I just started learning React.js</p>-->
+<!--just testing to see how this looks erase from here to end comment-->
+<div>
+  <p class="headline-section">&#91; Certifications &#93;</p>	
+  </div>
+  <div class="projects">
+   <p>I've attained my JavaScript certificates both from <a href="https://www.freecodecamp.org/fccb62c087f-0071-4091-9128-d9e3ad30f9a7">FreeCodeCamp.org</a> as well as <a href="https://www.sololearn.com/">SoloLearn</a> app. From FreeCodeCamp.org I also attained a Front End Libraries for 
+   completing the coursework as well as a Responsive Web Design certificate. My Web Development Education is still ongoing as I would like to become a Full Stack Developer. </p>
+</div>
+  
+   <div><h2 class="h2resume">&#123; JavaScript Algorithms and Data Structures &#125;</h2></div>
+   
+   <br>
+   <img class="certifications" src="javascript-cert.jpg">
+   <br>
+   <br>
+   
+   <div><h2 class="h2resume">&#123; Front End Libraries &#125;</h2></div>
+   <br>
+   <img class="certifications" src="front-end.jpg">
+   <br>
+   <br>
+
+   <div><h2 class="h2resume">&#123; Responsive Web Design &#125;</h2></div>
+   <br>
+   <img class="certifications" src="responsive-design.jpg">
+   <br>
+   <br>
+
+   <div><h2 class="h2resume">&#123; SoloLearn JavaScript Certificate &#125;</h2></div>
+   <br>
+   <img class="certifications" src="JavaScript_certificate.jpg">
+   <div>
+     <br>
+     <br>
+     <!--end of testing line-->
 <a id="about-me"></a>
 <div><p class="headline-section">&#124; About Me &#124;</p>
 <div class="wrapper">
@@ -106,39 +141,7 @@
                     I can be reached through my email: fullstackchip@gmail.com
                 </div>
             </div>
- <script>
-    let ctx = document.getElementById('myChart').getContext('2d');
-    let chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'horizontalBar',
-
-        // The data for our dataset
-        data: {
-            labels: ["HTML", "Css", "Grid", "Flexbox", "Bootstrap", "Javascript", "React", "jQuery", "Node.js"],
-            datasets: [{
-                label: "Web Developer Skills.",
-                backgroundColor: ['crimson', '#f57c00', 'gold', 'yellow', 'lime', 'green', '#01796f','turquoise', 'cyan'],
-                borderColor: 'rgb(99, 99, 132)',
-                data: [80, 90, 70, 60, 60, 55, 25, 60, 25],
-            }]
-        },
-
-        // Configuration options go here
-        options: {
-            responsive: true,
-            maintainAspectRation: false,
-            scales: {
-                yAxes:[{
-                    ticks:{
-                        beginAtZero:true
-                    }
-                }]
-            }
-            
-            
-        }
-    });
-    </script>
+ <script src="portfolio.js"></script>
 
 
 
