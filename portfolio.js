@@ -1,3 +1,13 @@
+//resume page shake effect on skills section 
+//jQuery code goes first before other code otherwise it doesn't work.
+
+$(document).ready(function () {
+    $(".shake").hover(function () {
+        $(this).effect("shake", { times: 1 }, 1000);
+    });
+});
+//end shake effect code.
+
 //Bar Graph in index.html page.
 let ctx = document.getElementById('myChart').getContext('2d');
 let chart = new Chart(ctx, {
@@ -19,19 +29,19 @@ let chart = new Chart(ctx, {
         maintainAspectRation: false,
         legend: {
             labels: {
-                fontSize: 18
+                fontSize: 13
             }
         },
         scales: {
             yAxes: [{
                 ticks: {
-                    fontSize: 16,
+                    fontSize: 14,
                     beginAtZero: true
                 }
             }],
             xAxes: [{
                 ticks: {
-                    fontSize: 16
+                    fontSize: 12
                 }
             }]
         }
@@ -41,14 +51,6 @@ let chart = new Chart(ctx, {
 });
 //end bar graph code.
 
-
-//resume page shake effect on skills section
-$(document).ready(function () {
-    $(".shake").hover(function () {
-        $(this).effect("shake", { times: 1 }, 1000);
-    });
-});
-//end shake effect code.
 
 //index.html certifications hide button
 document.querySelector("#cert-button").onclick = function () {
