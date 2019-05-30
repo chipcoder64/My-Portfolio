@@ -412,6 +412,10 @@ body{
     .resume-button, #cert-button{
         font-size: 60%;
     }
+
+    .layer {/*right side top layer*/
+        background-image: linear-gradient(to right, rgba(58, 79, 142, 1.0), rgba(0, 22, 50, 1.0));
+    }
 }
 
 
