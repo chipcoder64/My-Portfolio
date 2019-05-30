@@ -7,7 +7,7 @@ let chart = new Chart(ctx, {
     data: {
         labels: ["HTML", "Css", "Sass", "Grid", "Flexbox", "Bootstrap", "Javascript", "React.js", "jQuery.js", "Node.js", "Photoshop"],
         datasets: [{
-            label: "Web Developer Skills.",
+            label: "Skills",
             backgroundColor: ['crimson', '#f57c00', 'gold', 'yellow', 'lime', 'green', '#01796f', 'turquoise', 'cyan', 'teal', '#0f52ba'],
             borderColor: 'rgb(99, 99, 132)',
             data: [80, 90, 30, 70, 60, 60, 55, 25, 60, 25, 50],
@@ -17,12 +17,21 @@ let chart = new Chart(ctx, {
     options: {
         responsive: true,
         maintainAspectRation: false,
+        legend: {
+            labels: {
+                fontSize: 18
+            }
+        },
         scales: {
             yAxes: [{
-
                 ticks: {
-                    fontSize: 18,
+                    fontSize: 16,
                     beginAtZero: true
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    fontSize: 16
                 }
             }]
         }
@@ -44,10 +53,11 @@ $(document).ready(function () {
 //index.html certifications hide button
 document.querySelector("#cert-button").onclick = function () {
     let para = document.querySelector(".cert-wrapper");
-    if (para.style.display === 'block') {
-        para.style.display = 'none';
+    let changeWord = document.querySelector("#changeWord");
+    if ((para.style.display === 'block') && (changeWord.innerHTML === 'hide' )) {
+        (para.style.display = 'none') && (changeWord.innerHTML = 'show');
     } else {
-        para.style.display = 'block';
+        (para.style.display = 'block') && (changeWord.innerHTML = 'hide');
     }
 }
     //end hide button code
