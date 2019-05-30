@@ -53,7 +53,7 @@ body{
 	margin: 0;
 	text-shadow: 3px 3px 3px #4d6bff;
     font-family: 'Audiowide', cursive;
-    height: 73vh;
+    height: 500px;
 }
 
 .bio {/*about me section*/
@@ -169,12 +169,12 @@ body{
 
 .chart{/*skills chart*/
     position: relative;
-    width: 85% !important;
-    height: 50vw !important;
-    margin: 10px 10% 10px 8%;
+    width: 90% !important;
+    height: 70vw !important;
+    margin: 10px 10% 10px 5%;
     border: 2px solid black;
     background-color: aliceblue;
-    padding: 10px;
+    padding: 0 5px;
 }
 .projects{
     font-size: 1.3em;
@@ -288,7 +288,7 @@ body{
 
 @media (max-width: 1129px){
     .heading{
-        height: 40vh;
+        height: 450px;
     }
     .email{
         font-size: 3vw;
@@ -302,7 +302,7 @@ body{
     }
 
     .heading{
-        height: 45vh;
+        height: 400px;
     }
     .email{
       font-size: 4vw;
@@ -406,11 +406,14 @@ body{
     }
 
     .heading{
-        height: 35vh;
+        height: 300px;
     }
 
     .resume-button, #cert-button{
-        font-size: 60%;
+        font-size: 4vw;
+        width: 70vw;
+        margin-left: 15%;
+        margin-right: 0%;
     }
 
     .layer {/*right side top layer*/
