@@ -8,6 +8,20 @@ $(document).ready(function () {
 });
 //end shake effect code.
 
+
+
+    //tooltip follows mouse on index.html
+    let tooltipSpan = document.querySelector("#tooltip-span");
+    window.onmousemove = function(move){
+        let x = move.clientX,
+            y = move.clientY;
+            tooltipSpan.style.top = (y + 20) + 'px';
+            tooltipSpan.style.left = (x + 20) + 'px';
+    };
+    //end tooltip hover
+
+
+
 //Bar Graph in index.html page.
 let ctx = document.getElementById('myChart').getContext('2d');
 let chart = new Chart(ctx, {
@@ -18,8 +32,7 @@ let chart = new Chart(ctx, {
         labels: ["HTML", "Css", "Sass", "Grid", "Flexbox", "Bootstrap", "Javascript", "React.js", "jQuery.js", "Node.js", "Photoshop"],
         datasets: [{
             label: "Professional Skills",
-            labelColor: "blue",
-            backgroundColor: ['crimson', '#f57c00', 'gold', 'yellow', 'lime', 'green', '#01796f', 'turquoise', 'cyan', 'teal', '#0f52ba'],
+            backgroundColor: ['crimson', '#f57c00', 'gold', 'yellow', 'lime', '#009700', '#02853c', '#02d378', '#01c2ca', '#0084ea', '#004eff'],
             borderColor: 'rgb(99, 99, 132)',
             data: [80, 90, 30, 70, 60, 60, 55, 25, 60, 25, 50],
         }]
@@ -30,8 +43,8 @@ let chart = new Chart(ctx, {
         maintainAspectRation: false,
         legend: {
             labels: {
-                color: "blue",
-                fontSize: 13
+                boxWidth: 0,
+                fontSize: 16
             }
         },
         scales: {
@@ -65,3 +78,4 @@ document.querySelector("#cert-button").onclick = function () {
     }
 }
     //end hide button code
+
