@@ -29,7 +29,7 @@ let chart = new Chart(ctx, {
         maintainAspectRation: false,
         legend: {
             labels: {
-                backgroundColor: "blue",
+                color: "blue",
                 fontSize: 13
             }
         },
