@@ -17,7 +17,7 @@ let chart = new Chart(ctx, {
     data: {
         labels: ["HTML", "Css", "Sass", "Grid", "Flexbox", "Bootstrap", "Javascript", "React.js", "jQuery.js", "Node.js", "Photoshop"],
         datasets: [{
-            label: "Skills",
+            label: "Professional Skills",
             backgroundColor: ['crimson', '#f57c00', 'gold', 'yellow', 'lime', 'green', '#01796f', 'turquoise', 'cyan', 'teal', '#0f52ba'],
             borderColor: 'rgb(99, 99, 132)',
             data: [80, 90, 30, 70, 60, 60, 55, 25, 60, 25, 50],
