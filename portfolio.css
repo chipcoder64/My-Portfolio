@@ -119,6 +119,24 @@ body{
     flex-direction: row;
     margin-right: 20px;
 }
+
+.link-image span{
+    display: none;
+    border-radius: 6px;
+    color: white;
+    background: #09185f; 
+}
+
+.link-image:hover span {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    max-width: 100%; /* adjust to the width of the image*/
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 8px;
+  }
+
 .icon-img{/*the images for the links*/
     position: relative;
     top: -40px;
@@ -346,7 +364,7 @@ body{
     }
     
     .link-div{
-        top: 100px;
+        top: 90px;
     }
     
     .icon-img{
