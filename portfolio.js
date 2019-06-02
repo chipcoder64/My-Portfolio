@@ -29,10 +29,10 @@ let chart = new Chart(ctx, {
     type: 'horizontalBar',
     // The data for the graph. Add additional fields in "labels" along with "data".
     data: {
-        labels: ["HTML", "Css", "Sass", "Grid", "Flexbox", "Bootstrap", "Javascript", "React.js", "jQuery.js", "Node.js", "Photoshop"],
+        labels: ["HTML", "Css", "Sass", "Grid", "Flexbox", "Bootstrap", "Javascript", "React.js", "jQuery.js", "Node.js", "Angular.js", "Photoshop"],
         datasets: [{
             label: "Professional Skills",
-            backgroundColor: ['crimson', '#f57c00', 'gold', 'yellow', 'lime', '#009700', '#02853c', '#02d378', '#01c2ca', '#0084ea', '#004eff'],
+            backgroundColor: ['crimson', '#f57c00', 'gold', 'yellow', 'lime', '#009700', '#02d378', '#01c2ca', '#0084ea', '#004eff', '#1c25cf', '#6600ff'],
             borderColor: 'rgb(99, 99, 132)',
             data: [80, 90, 30, 70, 60, 60, 55, 25, 60, 25, 50],
         }]
