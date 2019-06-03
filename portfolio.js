@@ -34,7 +34,7 @@ let chart = new Chart(ctx, {
             label: "Professional Skills",
             backgroundColor: ['crimson', '#f57c00', 'gold', 'yellow', 'lime', '#009700', '#02d378', '#01c2ca', '#0084ea', '#004eff', '#1c25cf', '#6600ff'],
             borderColor: 'rgb(99, 99, 132)',
-            data: [80, 90, 30, 70, 60, 60, 55, 25, 60, 25, 50, 55],
+            data: [80, 90, 45, 70, 60, 60, 55, 35, 60, 45, 50, 55],
         }]
     },
     // Configuration options go here
