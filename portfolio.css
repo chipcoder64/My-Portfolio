@@ -1,10 +1,14 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body{
+    background-image: -webkit-gradient(linear, left top, right top, from(#3a4f8e), to(#001632));
+    background-image: -webkit-linear-gradient(left, #3a4f8e, #001632);
+    background-image: -o-linear-gradient(left, #3a4f8e, #001632);
     background-image: linear-gradient(to right, #3a4f8e, #001632);
 }
 
@@ -19,6 +23,9 @@ body{
 }
 
 .layer {/*right side top layer*/
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 79, 142, 0.8)), to(rgba(0, 22, 50, 0.8)));
+    background-image: -webkit-linear-gradient(left, rgba(58, 79, 142, 0.8), rgba(0, 22, 50, 0.8));
+    background-image: -o-linear-gradient(left, rgba(58, 79, 142, 0.8), rgba(0, 22, 50, 0.8));
     background-image: linear-gradient(to right, rgba(58, 79, 142, 0.8), rgba(0, 22, 50, 0.8));
     background-repeat: no-repeat;
     background-size: 100%;
@@ -27,9 +34,22 @@ body{
 }
 
 .blinking{/* header blinking underscore*/
-	animation:blinkingText 0.9s infinite;
+	-webkit-animation:blinkingText 0.9s infinite;
+	        animation:blinkingText 0.9s infinite;
     font-size: 6vw;
     
+}
+@-webkit-keyframes blinkingText{
+	0%{		color: #dce5f4;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color: transparent;	}
+	100%{	color: #dce5f4;	}
+    0% { text-shadow: 3px 3px 3px #8d10b0; }
+    49% { text-shadow: none; }
+    50% { text-shadow: none; }
+    99% { text-shadow: none; }
+    100% { text-shadow: 3px 3px 3px #8d10b0; }
 }
 @keyframes blinkingText{
 	0%{		color: #dce5f4;	}
@@ -45,6 +65,9 @@ body{
 }
 
 .heading {/*top of with name and icons*/
+	background-image: -webkit-gradient(linear, left top, right top, from(#3a4f8e), to(#001632));
+	background-image: -webkit-linear-gradient(left, #3a4f8e, #001632);
+	background-image: -o-linear-gradient(left, #3a4f8e, #001632);
 	background-image: linear-gradient(to right, #3a4f8e, #001632);
 	color: #dce5f4;
 	text-align: center;
@@ -91,10 +114,14 @@ body{
 }
 
 .navi ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	text-align: center;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	list-style: none;
 	margin: 5px;
 }
@@ -107,8 +134,12 @@ body{
 	color: red;
 }
 .link-div{/*all the links in one flex div*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     position: relative;
     top: 100px;
     height: 50px;
@@ -116,7 +147,10 @@ body{
 }
 
 .link-image{/*when moving a link and image target the link only otherwise the image moves but the link stays*/
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-right: 20px;
 }
 
@@ -162,6 +196,8 @@ body{
 
 .email{
     font-size: 1.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 31vw;
@@ -269,8 +305,12 @@ body{
     width: 40%;
     margin: 0 27% 0 28% ;
     overflow: hidden;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#949494), to(#3f3e3e));
+    background-image: -webkit-linear-gradient(top, #949494, #3f3e3e);
+    background-image: -o-linear-gradient(top, #949494, #3f3e3e);
     background-image: linear-gradient(to bottom, #949494, #3f3e3e);
-    box-shadow: 4px 2px 2px #001632;
+    -webkit-box-shadow: 4px 2px 2px #001632;
+            box-shadow: 4px 2px 2px #001632;
     border-radius: 10px;
     color: whitesmoke;
     outline: none;
@@ -280,6 +320,9 @@ body{
     /*center button in mobile and change words to say hide button when paragraph is showing*/
 }
 #cert-button:hover, .resume-button:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#707070));
+    background-image: -webkit-linear-gradient(top, #d3d3d3, #707070);
+    background-image: -o-linear-gradient(top, #d3d3d3, #707070);
     background-image: linear-gradient(to bottom, #d3d3d3, #707070);
     color: darkblue;
 }
@@ -439,6 +482,9 @@ body{
     }
 
     .layer {/*right side top layer*/
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 79, 142, 1.0)), to(rgba(0, 22, 50, 1.0)));
+        background-image: -webkit-linear-gradient(left, rgba(58, 79, 142, 1.0), rgba(0, 22, 50, 1.0));
+        background-image: -o-linear-gradient(left, rgba(58, 79, 142, 1.0), rgba(0, 22, 50, 1.0));
         background-image: linear-gradient(to right, rgba(58, 79, 142, 1.0), rgba(0, 22, 50, 1.0));
     }
 }
@@ -460,7 +506,9 @@ body{
        font-size: 4.3vw;
        top: 36vw; 
        left: 70px;
-       align-items: center;
+       -webkit-box-align: center;
+           -ms-flex-align: center;
+               align-items: center;
     }
         
     .link-div{
@@ -503,7 +551,6 @@ body{
         height: 40px;
     }
 }
-
 
 
 
