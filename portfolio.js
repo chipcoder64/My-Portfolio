@@ -8,7 +8,11 @@ $(document).ready(function () {
 });
 //end shake effect code.
 
-
+//makes intro effect dissappear after x amount of seconds on index page
+setTimeout(function(){
+  document.getElementById("clearDiv").style.display = "none";
+}, 20000);
+//ends time out function
 
     //tooltip follows mouse on index.html
     let tooltipSpan = document.querySelector("#tooltip-span");
