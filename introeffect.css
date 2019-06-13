@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.effect-wrapper{
+    background-color: black;
+    color: aqua;
+    text-shadow: aquamarine 0 0 15px, blue 0px 0px 20px;
+    position: absolute;
+    width: 100vw;
+    height: 200%;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1000;
+}
+.typewriter div{
+    margin-left: 40%;
+    font-size: 1.3em;
+    color: lime;
+    overflow: hidden;
+    border-right: 1px solid black;
+    text-align: left;
+    white-space: nowrap;
+    position: relative;
+}
+
+.type1{
+    width: 0;
+    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
+     /*Forwards - when the animation stops it stays at that spot on the page
+    instead of going to default position. Step-end number - how many seconds before the animation
+    ends*/
+}
+
+.type2{
+    width: 0;
+    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+    animation-delay: 2s;
+}
+
+.type3{
+    width: 0;
+    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
+    animation-delay: 3s;
+}
+
+pre{
+    margin-left: 21%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    color: magenta;
+    overflow: hidden;
+    border-right: 1px solid black;
+    text-align: left;
+    position: relative;
+}
+.pre1{
+    width: 0;
+    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 3;
+    animation-delay: 5s;
+    }
+.pre2{
+    width: 0;
+    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+    animation-delay: 6s;
+}
+.pre3{
+    width: 0;
+    animation: typing 5s steps(60, end) forwards, blink-caret .5s step-end 7;
+    animation-delay: 8s;
+}
+.pre4{
+    width: 0;
+    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+    animation-delay: 11s;
+}
+.pre5{
+    width: 0;
+    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
+    animation-delay: 12s;
+}
+.pre6{
+    width: 0;
+    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+    animation-delay: 15s;
+}
+.pre7{
+    width: 0;
+    animation: typing 6s steps(60, end) forwards, blink-caret .5s step-end 5;
+    animation-delay: 16s;
+    color: lime;
+}
+
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to{
+        border-color: transparent; 
+    }
+    50%{
+        border-color: lime;
+    }
+}
+
+
+/*Media Queries Below*/
+@media (max-width: 1168px){
+    .typewriter div{
+        margin-left: 33%;
+        top: 40px;
+        font-size: 1.8em;
+    }
+    pre{
+        font-size: 1.2em;
+        top: 40px;
+        left: -15%;
+    }
+}
+
+@media (max-width: 975px){
+    .typewriter div{
+        margin-left: 33%;
+        top: 40px;
+        font-size: 1.8em;
+    }
+    pre{
+        font-size: 1.2em;
+        top: 40px;
+        left: -15%;
+    }
+}
+@media (max-width: 736px){
+    .typewriter div{
+        top: -80px;
+        margin-left: 35%;
+        font-size: .9em;
+    }
+    pre{
+        top: -100px;
+        left: -10%;
+        font-size: .8em;
+    }
+}
+@media (max-width: 668px){
+    .typewriter div{
+        top: -60px;
+        margin-left: 40%;
+        font-size: .9em;
+    }
+    pre{
+        top: -120px;
+        left: -70px;
+        font-size: .6em;
+    }
+}
+
+
+@media (max-width: 639px){
+    .typewriter div{
+        position: relative;
+        top: -140px;
+        font-size: 1em;
+    }
+    pre{
+        top: -170px;
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 569px){
+    .typewriter div{
+        font-size: .8em;
+        top: -75px;
+        margin-left: 37%;
+    }
+    pre{
+        left: -20%;
+        top: -115px;
+        font-size: .7em;
+    }
+}
+
+@media (max-width: 415px){
+    .typewriter div{
+        font-size: .9em;
+        top: 45%;
+        margin-left: 30%;
+    }
+    pre{
+        left: -20%;
+        top: 0px;
+        font-size: .7em;
+    }
+}
+@media (max-width: 376px){
+
+    .typewriter div{
+        font-size: .9em;
+        top: 45%;
+        margin-left: 30%;
+    }
+    pre{
+        left: -17%;
+        font-size: .6em;
+
+    }
+}
+
+@media (max-width: 360px){
+    .typewriter div{
+        font-size: .9em;
+        margin-left: 30%;
+    }
+    pre{
+        left: -20%;
+        font-size: .6em;
+    }
+}
+
+@media (max-width: 320px){
+
+    .typewriter div{
+        font-size: .7em;
+        top: -50px;
+    }
+    pre{
+        top: -40px;
+        margin-left: 75px;
+        font-size: 8px;
+    }
+}
