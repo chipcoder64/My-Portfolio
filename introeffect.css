@@ -29,7 +29,8 @@
 
 .type1{
     width: 0;
-    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
+    -webkit-animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
+            animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
      /*Forwards - when the animation stops it stays at that spot on the page
     instead of going to default position. Step-end number - how many seconds before the animation
     ends*/
@@ -37,14 +38,18 @@
 
 .type2{
     width: 0;
-    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
-    animation-delay: 2s;
+    -webkit-animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+            animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
 }
 
 .type3{
     width: 0;
-    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
-    animation-delay: 3s;
+    -webkit-animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
+            animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
 }
 
 pre{
@@ -60,39 +65,63 @@ pre{
 }
 .pre1{
     width: 0;
-    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 3;
-    animation-delay: 5s;
+    -webkit-animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 3;
+            animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 3;
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
     }
 .pre2{
     width: 0;
-    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
-    animation-delay: 6s;
+    -webkit-animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+            animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
 }
 .pre3{
     width: 0;
-    animation: typing 5s steps(60, end) forwards, blink-caret .5s step-end 7;
-    animation-delay: 8s;
+    -webkit-animation: typing 5s steps(60, end) forwards, blink-caret .5s step-end 7;
+            animation: typing 5s steps(60, end) forwards, blink-caret .5s step-end 7;
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
 }
 .pre4{
     width: 0;
-    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
-    animation-delay: 11s;
+    -webkit-animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+            animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+    -webkit-animation-delay: 11s;
+            animation-delay: 11s;
 }
 .pre5{
     width: 0;
-    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
-    animation-delay: 12s;
+    -webkit-animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
+            animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 2;
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
 }
 .pre6{
     width: 0;
-    animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
-    animation-delay: 15s;
+    -webkit-animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+            animation: typing 4s steps(60, end) forwards, blink-caret .5s step-end 1;
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
 }
 .pre7{
     width: 0;
-    animation: typing 6s steps(60, end) forwards, blink-caret .5s step-end 5;
-    animation-delay: 16s;
+    -webkit-animation: typing 6s steps(60, end) forwards, blink-caret .5s step-end 5;
+            animation: typing 6s steps(60, end) forwards, blink-caret .5s step-end 5;
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;
     color: lime;
+}
+
+
+@-webkit-keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
 }
 
 
@@ -102,6 +131,15 @@ pre{
     }
     to{
         width: 100%;
+    }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to{
+        border-color: transparent; 
+    }
+    50%{
+        border-color: lime;
     }
 }
 
